@@ -1,1 +1,7 @@
-add_executable(solarust src/main.c)
+add_executable(app
+  src/main.c
+)
+
+target_link_libraries(app PRIVATE
+    solarust
+)
